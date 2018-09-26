@@ -158,7 +158,7 @@ class App extends React.Component {
   }
 
   fetch () {
-    axios.get('http://54.185.206.213:3000/betterBnB/comments')
+    axios.get('http://localhost:3000/betterBnB/comments')
       .then((response) => {
         console.log(response);
         this.setState({
@@ -188,7 +188,7 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.state.searchVal);
-    axios.post('http://54.185.206.213:3000/betterBnB/comments', {Text: this.state.searchVal, House: this.state.comments[0].House})
+    axios.post('http://localhost:3000/betterBnB/comments', {Text: this.state.searchVal, House: this.state.comments[0].House})
       .then((response) => {
         this.setState({
           comments: response.data,

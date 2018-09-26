@@ -1,14 +1,14 @@
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://mongo:27017/betterBnB');
+var mongoose = require("mongoose");
+mongoose.connect("mongodb://localhost:27017/betterbnb");
 
 var db = mongoose.connection;
 
-db.on('error', () => {
-  console.log('error');
+db.on("error", error => {
+  console.log("Error connecting to database:", error);
 });
 
-db.once('open', () => {
-  console.log('connected to database!')
+db.once("open", () => {
+  console.log("Success connecting to database!");
 });
 
 module.exports.db = db;
