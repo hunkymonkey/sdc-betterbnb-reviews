@@ -2,10 +2,11 @@ var mongoose = require('mongoose');
 require('./index');
 
 var commentsSchema = new mongoose.Schema({
+  id: Number,
   User: String,
   Name: String,
   ImageUrl: String,
-  Date: { type: Date, default: Date.now },
+  Date: String,
   AccuracyRating: Number,
   CommunicationRating: Number,
   CleanlinessRating: Number,

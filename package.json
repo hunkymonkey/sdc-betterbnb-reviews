@@ -31,6 +31,7 @@
     "cors": "^2.8.4",
     "docker": "^1.0.0",
     "express": "^4.15.0",
+    "faker": "^4.1.0",
     "jquery": "^3.1.1",
     "jsonfile": "^4.0.0",
     "mongoose": "^4.8.6",
