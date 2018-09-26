@@ -1,0 +1,257 @@
+.app {
+  width: 52%;
+  color: #484848;
+  line-height: 20.02px;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 73px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  display: flex;
+}
+
+.title {
+  color: rgb(72, 72, 72);
+  font-size: 24px;
+  font-weight: 800;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  line-height: 30px;
+  display: block;
+  padding-top: 20px;
+  flex: 1;
+  margin: 0;
+}
+
+.style {
+  height: 1em; 
+  width: 1em; 
+  display: block; 
+  fill: currentcolor;
+}
+
+.search {
+  flex: 1 end;
+  position: relative;
+  margin-top: 22px;
+  margin-bottom: 16px;
+  border-bottom-color: rgb(235, 235, 235);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(235, 235, 235);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(235, 235, 235);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(235, 235, 235);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.selectedSearch {
+  flex: 1 end;
+  position: relative;
+  margin-top: 22px;
+  margin-bottom: 16px;
+  border-bottom-color: rgb(0, 132, 137);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(0, 132, 137);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(0, 132, 137);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(0, 132, 137);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.magGlass {
+  padding-top: 10px;
+  height: .9em;
+  width: 1.7em;
+}
+
+.searchBar {
+  background-color: transparent;
+  display: inline;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: normal;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: 600;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  padding-bottom: 8px;
+  outline: none;
+}
+
+.review {
+  border-bottom: 1px solid rgb(194, 194, 194) !important;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  color: #484848;
+  direction: ltr;
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.reviewName {
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.reviewDate {
+  font-size: 14px;
+}
+
+.ratings {
+  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  display: flex;
+  width: calc(100% + 16px);
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.rightRatings {
+  flex: 1 0 auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.leftRatings {
+  flex: 1 0 auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.rightRatings > div, .leftRatings > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentHeader {
+  display: flex;
+}
+
+.commentMeta {
+  flex: 1 0 auto;
+  margin-left: 16px;
+}
+
+.commentMeta p {
+  margin: 0;
+}
+
+.reviewName {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.reviewDate {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.commentImage {
+  flex: 0 0 48px;
+  width: 48px;
+}
+
+.commentImage img{
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.scroller {
+  margin-top: 20px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  width: 100%
+}
+
+.scrollerList {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.scrollerList > li {
+  margin: 0 8px;
+}
+
+.scrollerList button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #008489;
+  text-decoration: none;
+  outline: none;
+}
+
+.scrollerList button > div {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.scrollerList > li:first-of-type{
+  margin-left: 0;
+}
+
+.scrollerList > li:last-of-type{
+  margin-right: 0;
+}
+
+.lastButton button > div {
+  border: 1px solid #008489;
+  position: relative;
+}
+
+.nextButton button > div {
+  border: 1px solid #008489;
+  position: relative;
+}
+
+.currentPage div{
+  background-color: #008489;
+  color: #FFF;
+}
+
+.scrollerList svg {
+  height: 1em;
+  width: 1em;
+  display: block;
+  fill: currentColor;
+}
+
+.buttonInterior {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
