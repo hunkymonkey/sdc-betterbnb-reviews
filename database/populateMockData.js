@@ -5,7 +5,7 @@ const rating = () => {
   return Math.floor(Math.random() * 10 + 1);
 };
 
-const stream = fs.createWriteStream("./mockdata2.tsv", { flags: "a" });
+const stream = fs.createWriteStream("./mockdata2.json", { flags: "a" });
 
 for (let i = 0; i < 10000000; i++) {
   if (i % 1000000 === 0) {
