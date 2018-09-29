@@ -7,7 +7,7 @@
     "build": "webpack -d --watch",
     "start": "nodemon server/index.js",
     "test": "jest --coverage",
-    "populate": "node ./database/populate.js"
+    "populate": "node ./database/populateMockData.js"
   },
   "author": "Beth Johnson",
   "license": "ISC",
