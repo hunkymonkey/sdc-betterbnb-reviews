@@ -14,7 +14,7 @@ const populate = writer => {
     do {
       i--;
       const comment = {
-        id: faker.random.number(),
+        id: i,
         User: faker.lorem.word(),
         Name: faker.name.firstName(),
         ImageUrl: faker.image.avatar(),
@@ -45,3 +45,5 @@ const populate = writer => {
 };
 
 populate(stream);
+
+//import data to database command:  mongoimport --db betterbnb --collection comments --file mockdata.json

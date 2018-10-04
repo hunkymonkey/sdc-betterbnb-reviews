@@ -8,11 +8,13 @@ const rating = () => {
 const stream = fs.createWriteStream("./mockdata.csv", { flags: "a" });
 
 const populate = writer => {
+  let houseID = 0;
   let i = 10000000;
   const write = () => {
     let ok = true;
     do {
       i--;
+      houseID++;
       const data = 
         i + ',' 
         + faker.lorem.word() + ','
@@ -26,7 +28,7 @@ const populate = writer => {
         + rating() + ','
         + rating() + ','
         + faker.lorem.paragraph() + ','
-        + faker.random.number() + '\n';
+        + houseID + '\n';
       if (i === 0) {
         writer.write(data);
       } else {
@@ -47,8 +49,8 @@ populate(stream);
 // mysql -u root  --local-infile=1 betterbnb
 // show variables like 'local_infile';
 // set global local_infile = ON;
-// LOAD DATA LOCAL INFILE '/Users/servandojbernarico/Downloads/HackReactor/betterbnb-reviews/mockdata.csv' INTO TABLE reviews FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
-// CREATE TABLE reviews (
+// LOAD DATA LOCAL INFILE '/Users/servandojbernarico/Downloads/HackReactor/betterbnb-reviews/mockdata.csv' INTO TABLE comments FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+// CREATE TABLE comments (
 // 	id INT NOT NULL,
 // 	User VARCHAR(40) NOT NULL,
 // 	Name VARCHAR(40) NOT NULL,
@@ -61,6 +63,6 @@ populate(stream);
 // 	CheckInRating INT NOT NULL,
 // 	ValueRating INT NOT NULL,
 // 	Text VARCHAR(255) NOT NULL,
-// 	House VARCHAR(80) NOT NULL,
+// 	House INT NOT NULL,
 // 	PRIMARY KEY (id)
 // );
