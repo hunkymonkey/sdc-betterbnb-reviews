@@ -9,10 +9,12 @@ const stream = fs.createWriteStream("./mockdata.json", { flags: "a" });
 
 const populate = writer => {
   let i = 10000000;
+  let houseNum = Math.floor(Math.random() * 1000000) + 1;
   const write = () => {
     let ok = true;
     do {
       i--;
+      houseNum--;
       const comment = {
         id: i,
         User: faker.lorem.word(),
@@ -26,7 +28,7 @@ const populate = writer => {
         CheckInRating: rating(),
         ValueRating: rating(),
         Text: faker.lorem.paragraph(),
-        House: faker.random.number()
+        House: houseNum
       };
       const data = JSON.stringify(comment, null, 4) + "\n";
       if (i === 0) {

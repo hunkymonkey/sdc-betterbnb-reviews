@@ -13,6 +13,6 @@ app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/../client/dist'))
 
-app.use('/betterBnB', routes)
+app.use('/betterbnb', routes)
 
 module.exports.app = app;

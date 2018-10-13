@@ -158,7 +158,7 @@ class App extends React.Component {
   }
 
   fetch () {
-    axios.get('http://localhost:3000/betterBnB/comments')
+    axios.get(`http://localhost:3000/betterBnB/comments/${40610}`)
       .then((response) => {
         console.log(response);
         this.setState({
