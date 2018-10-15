@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/betterbnb");
+mongoose.connect("mongodb://sdc:sdc@54.183.239.84/betterbnb");
 
 var db = mongoose.connection;
 
